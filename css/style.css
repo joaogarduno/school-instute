@@ -1,0 +1,295 @@
+/* COLORS */
+/*
+    Originales:
+    #0E2A44
+    #CFA33E
+    #FEFEFE
+
+    Opciones:
+
+*/
+
+/* VARIABLES */
+:root{
+    /* COLOR PROJECT */
+    --color-background: #0E2A44;
+    --color-font: #CFA33E;
+    --color-white: #FEFEFE;
+    --color-black: #070606;
+    --color-backsubmenu: #A07C28;
+    --color-backmenu: #E5CD96;
+    /* --color-backsubmenu: #E9D6A8; */
+    /* --color-backsubmenu: #E0C585; */
+
+    /* FONT SIZE */
+    --size-xxs: 1.2rem;
+    --size-xs: 1.5rem;
+    --size--sm: 1.6rem;
+    --size-md: 2.5rem;
+    --size-lg: 3rem;
+    --size-xl: 4rem;
+    --size-xxl: 5rem;
+}
+
+/*  */
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body{
+    height: 100%;
+}
+html{
+    background-color: var(--color-background);
+    color: var(--color-white);
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: var(--size--sm);
+    line-height: 1.5;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ************************************************************** */
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--size-md);
+}
+a{
+    text-decoration: none;
+}
+/* ***************************************************************** */
+header, nav, main, section, article, aside, figure, footer, div{
+    width: 100%;
+}
+/* ******************************************************************* */
+img{
+    max-width: 100%;
+}
+button{
+    border: none;
+    font-size: var(--size-xxs);
+    font-weight: bold;
+    letter-spacing: normal;
+}
+/* **************************************************************** */
+.container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+/* .headerContent .navContent .mainContent, .sectionContent, .articleContent, .asideContent .footerContent{} */
+
+/* *********************************************************************** */
+.row-container, .col-container{
+    width: 100%;
+}
+/* .row-container{} */
+/* .col-container{} */
+
+/* *********************************************************************** */
+/* HEADER  CONTENT - MENU */
+.headerContent{
+    outline: 1px solid red;
+    /* height: 9rem; */
+    position: relative;
+}
+.nav-active{
+    transform: translateX(-100%);
+}
+/* *********************************************************************** */
+/* NAV CONTENT - MENU */
+
+/* MENU MOBILE */
+.nav__menu--mobile{
+    background-color: var(--color-font);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 1rem;
+    /* transform: translateX(-100%); */
+}
+/* MOBILE BURGER */
+.mobile__burger{
+    /* outline: 1px solid red; */
+    cursor: pointer;
+    display: block;
+    /* width: auto; */
+    /* width: 30%; */
+}
+.mobile__burger .line{
+    background-color: var(--color-white);
+    height: .3rem;
+    margin: .5rem;
+    width: 5rem;
+}
+/* LETTER "X" */
+.mobile__burger .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.mobile__burger .line2{
+    opacity: 0;
+}
+.mobile__burger .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* MENU LINKS */
+.mobile__ul{
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    height: 95%;
+    width: 100%;
+}
+.mobile__ul--li{
+    /* outline: 1px solid red; */
+    font-size: var(--size-md);
+    text-transform: capitalize;
+    width: 100%;
+}
+.mobile__ul--li a{
+    color: var(--color-white);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15rem;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+/* MENU MOBILE - HOVER */
+.mobile__ul--li a:hover{
+    background-color: var(--color-backmenu);
+    color: var(--color-font);
+    font-weight: bold;
+    border-radius: 3rem;
+    /* border-radius: 10%; */
+}
+
+/* SUBMENU */
+.submenu__mobile--li{}
+.submenu__mobile--a{}
+/* SUBMENU - UL */
+.submenu__mobile--ul{
+    background-color: var(--color-backsubmenu);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.submenu__mobile--ul li{}
+.submenu__mobile--ul li a{}
+
+/* MOBILE MENU - ICONS */
+.mobile__icons{
+    outline: 1px solid red;
+    /* padding-top: 1rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mobile__icons li{}
+.mobile__icons li a{
+    color: var(--color-white);
+    /* font-size: var(--size-icons); */
+    font-size: 2rem;
+    transition: all 0.4s ease;
+    /* font-size: var(--size-xs); */
+    /* background-color: var(--color-white); */
+}
+/* HOVER */
+.mobile__icons li a:hover{
+    background-color: var(--color-backmenu);
+    color: var(--color-font);
+    border-radius: 25%;
+}
+
+
+
+/* --------------------------------------
+    MEDIAQUERIES 
+------------------------------------------ */
+/* 480px */
+@media screen and (min-width: 480px){
+    /* BURGER */
+    /* .line{
+        height: .5rem;
+        width: 5rem;
+    } */
+    /* NAV MENU */
+    /* .nav__logo a img{
+        width: 45%;
+    } */
+}
+
+/* 576px */
+@media screen and (min-width: 576px){}
+
+/* 768px */
+@media screen and (min-width: 768px){}
+
+/* 992px */
+@media screen and (min-width: 992px){}
+/* 1024 */
+@media screen and (min-width: 1024px){}
+/* 1200 */
+@media screen and (min-width: 1200px){}
+/* 1400 */
+@media screen and (min-width: 1400px){}
