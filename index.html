@@ -33,59 +33,121 @@ Release:
         <div class="container">
             <nav class="navContent">
 
-                <!-- MENU DESKTOP -->
-                <div class="nav__menu--desktop"></div>
-
                 <!-- MENU MOBILE - OPEN -->
                 <div class="nav__menu--mobile">
                     
-                    <!-- BURGER -->
+                    <!-- LETTER "X" -->
                     <div class="mobile__burger">
                         <div class="line line1"></div>
                         <div class="line line2"></div>
                         <div class="line line3"></div>
                     </div>
 
-                    <!-- MENU - UL -->
-                    <ul class="mobile__ul">
-                        <li class="mobile__ul--li"><a href="#">home</a></li>
-                        <li class="mobile__ul--li"><a href="#">news</a></li>
-                        <li class="mobile__ul--li"><a href="#">about</a></li>
-                        <li class="mobile__ul--li"><a href="#">education</a></li>
-                        <!-- submenu -->
-                        <li class="mobile__ul--li submenu__mobile--li">
-                            <a class="submenu__mobile--a" href="#">institute <i class='bx bx-chevron-down'></i></a>
+                    <!-- MENU - MOBILE -->
+                    <div class="mobile__menu">
+                        <ul class="mobile__ul">
+                            <li class="mobile__ul--li"><a href="#">home</a></li>
+                            <li class="mobile__ul--li"><a href="#">news</a></li>
+                            <li class="mobile__ul--li"><a href="#">about</a></li>
+                            <li class="mobile__ul--li"><a href="#">education</a></li>
+                            <!-- SUBMENU -->
+                            <li class="mobile__ul--li submenu__mobile--li">
+                                <a class="submenu__mobile--a" href="#">institute <i class='bx bx-chevron-down'></i></a>
+    
+                                <!-- SUBMENU - UL -->
+                                <ul class="submenu__mobile--ul">
+                                    <li><a href="">preescolar</a></li>
+                                    <li><a href="#">primaria</a></li>
+                                    <li><a href="#">secundaria</a></li>
+                                    <li><a href="#">preparatoria</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__ul--li"><a href="#">contact</a></li>
+                        </ul>
+                    </div>
 
-                            <!-- SUBMENU - UL -->
-                            <ul class="submenu__mobile--ul">
-                                <li><a href="">preescolar</a></li>
-                                <li><a href="#">primaria</a></li>
-                                <li><a href="#">secundaria</a></li>
-                                <li><a href="#">preparatoria</a></li>
-                            </ul>
+                    <!-- ICON - MENU MOBILE -->
+                    <div class="mobile__icons">
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
                         </li>
-                        <li class="mobile__ul--li"><a href="#">contact</a></li>
-
-                        <!-- ICON - MENU MOBILE -->
-                        <div class="mobile__icons">
-                            <li>
-                                <a href="#">
-                                    <i class='bx bxl-facebook-circle'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class='bx bxl-instagram' ></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class='bx bxl-youtube' ></i>
-                                </a>
-                            </li>                            
-                        </div>
-                    </ul>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-instagram' ></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxl-youtube' ></i>
+                            </a>
+                        </li>                            
+                    </div>
+                    
                 </div>
+
+
+
+                
+                <!-- MENU DESKTOP -->
+                <div class="nav__menu--desktop">
+                    
+                    <!-- BURGER -->
+                    <div class="desktop__burger">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                    </div>
+
+                    <!-- LOGO -->
+                    <div class="desktop__logo">
+                        <a class="desktop__logo--a" href="index.html">
+                            <figure class="logo__a--figure">
+                                <img src="./img/logo/logo.png" alt="Logo_Instituto_Tierra_Nueva_Imagen">
+                            </figure>
+                            <div class="logo__a--text">
+                                <span class="a__text--span span1">instituto</span>
+                                <span class="a__text--span span2">tierra nueva</span>
+                                <span class="a__text--span span3">formando generaciones</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- MENU - DESKTOP -->
+                    <div class="desktop__menu">
+                        <ul class="desktop__ul">
+                            <li class="desktop__ul--li"><a class="desktop__ul--a" href="#">home</a></li>
+                            <li class="desktop__ul--li"><a class="desktop__ul--a" href="#">news</a></li>
+                            <li class="desktop__ul--li"><a class="desktop__ul--a" href="">about</a></li>
+                            <li class="desktop__ul--li"><a class="desktop__ul--a" href="">education</a></li>
+                            <li class="desktop__ul--li submenu__desktop--li">
+                                <a class="desktop__ul--a" href="">institute<i class='bx bx-chevron-down'></i></a>
+                                <ul class="submenu__desktop--ul">
+                                    <li><a href="#">preescolar</a></li>
+                                    <li><a href="#">primaria</a></li>
+                                    <li><a href="#">secundaria</a></li>
+                                    <li><a href="#">preparatoria</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktop__ul--li"><a class="desktop__ul--a" href="">contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- ICONS -->
+                    <div class="desktop__icons">
+                        <a href="">
+                            <span><i class='bx bx-search-alt-2'></i></span>
+                        </a>
+                        <a href="">
+                            <span><i class='bx bx-user'></i></span>
+                        </a>
+                        <!-- <span class="header__icon--span"></span>
+                        <span class="header__icon--span"></span> -->
+                    </div>
+                </div>
+
+
 
             </nav>
         </div>
