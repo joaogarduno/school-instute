@@ -89,6 +89,7 @@ html{
     background-color: var(--color-background);
     color: var(--color-white);
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     font-family: var(--font-document);
