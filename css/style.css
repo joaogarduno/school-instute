@@ -114,7 +114,7 @@ table {
 	border-spacing: 0;
 }
 
-/* ************************************************************** */
+/* ********************************************************** */
 p, h1, h2, h3, h4, h5, h6{
     overflow-wrap: break-word;
 }
@@ -127,11 +127,13 @@ h4, h5, h6 {
 a{
     text-decoration: none;
 }
-/* ***************************************************************** */
-header, nav, main, section, article, aside, figure, footer, div{
+/* ********************************************************** */
+header, nav, main, 
+section, article, aside, 
+figure, footer, div{
     width: 100%;
 }
-/* ******************************************************************* */
+/* ********************************************************** */
 img{
     max-width: 100%;
 }
@@ -141,7 +143,7 @@ button{
     font-weight: bold;
     letter-spacing: normal;
 }
-/* **************************************************************** */
+/* ********************************************************** */
 .container {
     /* outline: 1px solid red; */
     margin: 0 auto;
@@ -153,9 +155,13 @@ button{
 /* .inactive{
     display: none;
 } */
+/* ********************************************************** */
 /* .headerContent .navContent .mainContent, .sectionContent, .articleContent, .asideContent .footerContent{} */
+.mainContent{
+    display: grid;
+}
 
-/* *********************************************************************** */
+/* ********************************************************** */
 .row-container, .col-container{
     width: 100%;
 }
@@ -164,7 +170,7 @@ button{
 }
 /* .col-container{} */
 
-/* *********************************************************************** */
+/* ********************************************************** */
 /* HEADER  CONTENT - MENU */
 .headerContent{
     /* outline: 1px solid red; */
@@ -176,7 +182,7 @@ button{
 /* .headerContent .container{
     outline: 1px solid red;
 } */
-/* *********************************************************************** */
+/* ********************************************************** */
 /* NAV CONTENT - MENU */
 /* .navContent{
     display: flex;
@@ -395,7 +401,7 @@ button{
     BANNER - SLIDER
  ----------------------------------------------- */
 .bannerContent{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 100%;
   /* height: 100vh; */
   /* height: 100%; */
@@ -403,14 +409,14 @@ button{
   /* position: relative; */
 }
 .banner__slider{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 100%;
   /* position: relative; */
 }
 
 /* CONTAINER SLIDES */
 .banner__slides{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   display: flex;
   width: 400%;
   height: 70vh;
@@ -420,7 +426,7 @@ button{
 
 /* SLIDES BOX */
 .banner__slides--slide{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 100%;
   /* height: 100vh; */
   position: relative;
