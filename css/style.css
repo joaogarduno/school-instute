@@ -136,6 +136,7 @@ figure, footer, div{
 /* ********************************************************** */
 img{
     max-width: 100%;
+    object-fit: cover;
 }
 button{
     border: none;
@@ -143,6 +144,18 @@ button{
     font-weight: bold;
     letter-spacing: normal;
 }
+/* ********************************************************** */
+/* .headerContent .navContent .mainContent, .sectionContent, .articleContent, .asideContent .footerContent{} */
+.mainContent{
+    display: grid;
+    gap: 4.5rem 0;
+}
+/* .sectionContent{
+
+} */
+/* .articleContent{} */
+/* .asideContent{} */
+
 /* ********************************************************** */
 .container {
     /* outline: 1px solid red; */
@@ -155,15 +168,11 @@ button{
 /* .inactive{
     display: none;
 } */
-/* ********************************************************** */
-/* .headerContent .navContent .mainContent, .sectionContent, .articleContent, .asideContent .footerContent{} */
-.mainContent{
-    display: grid;
-}
 
 /* ********************************************************** */
 .row-container, .col-container{
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
 }
 .row-container{
     display: grid;
@@ -493,8 +502,71 @@ button{
   right: 10px;
 }
 
+/* ---------------------------------------------
+    ABOUT - SECTION
+----------------------------------------------- */
+/* .about__section{} */
+.about__row{
+    gap: 4.5rem 0;
+}
+.about__article--one{
+    outline: 1px solid red;    
+}
+.about__article--one h2{
+    padding: 2.5rem 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
+/* CONTAINER */
+.col__about--vmv{
+    display: grid;
+    gap: 2rem 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+/* ITEMS - ARTICLE */
+.about__article--vmv{
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about__article--vmv span{
+    font-size: var(--size-lgr);
+    /* font-size: var(--size-md); */
+}
+/* .about__article--vmv h5{} */
+.about__article--vmv p{}
 
+/*  */
+/* .about__article--vmv:hover{
+    padding: 5rem;
+} */
+/* ---------------------------------------------
+    NEWS - SECTION
+----------------------------------------------- */
+
+/* ---------------------------------------------
+    EDUCATION OFFERT - SECTION
+----------------------------------------------- */
+
+/* ---------------------------------------------
+    INSTITUTE CONTENT - SECTION
+----------------------------------------------- */
+
+/* ---------------------------------------------
+    CONTACT - SECTION
+----------------------------------------------- */
+
+/* ---------------------------------------------
+    FOOTER- SECTION
+----------------------------------------------- */
 
 
 
